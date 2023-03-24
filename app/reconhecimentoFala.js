@@ -18,7 +18,7 @@ recognition.onresult = (event) => {
     if( oQueFoiDito < numeroAleatorio ) elementoMensagemChute.innerHTML = 'O numero secreto é maior <i class="fa-sharp fa-solid fa-arrow-up"></i>';
     if( oQueFoiDito > numeroAleatorio ) elementoMensagemChute.innerHTML = 'O numero secreto é menor <i class="fa-sharp fa-solid fa-arrow-down"></i>';
     if( oQueFoiDito == numeroAleatorio ) { 
-        elementoMensagemChute.innerHTML = ' Voce Acertou ! <button id="jogarNovamente" class="button">Jogar Novamente</button>';
+        elementoMensagemChute.innerHTML = 'Voce Acertou ! <button id="jogarNovamente" class="button">Jogar Novamente</button>';
         const elementoBotaoJogarNovamente = document.getElementById("jogarNovamente");
         elementoBotaoJogarNovamente.addEventListener("click", () => { window.location.reload() })
     }
